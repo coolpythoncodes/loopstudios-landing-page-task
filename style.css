@@ -1,0 +1,578 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+header {
+	background: url("images/image-hero.jpg") no-repeat center center/cover;
+	width: 100vw;
+	height: 100vh;
+}
+
+header .logo {
+	color: #fff;
+	z-index: 999;
+}
+
+header .menu {
+	display: none;
+	z-index: 999;
+}
+
+header .navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 1rem;
+}
+
+header .nav-links {
+	display: flex;
+}
+
+header .nav-links a {
+	color: #fff;
+	padding-right: 2rem;
+}
+
+header .header-info {
+	color: #fff;
+	border: 1px solid #fff;
+	width: 500px;
+	height: fit-content;
+	text-transform: uppercase;
+	font-size: 4rem;
+	margin-top: 10rem;
+	/* padding-right: 4rem; */
+}
+
+header .header-info p {
+	padding: 1rem 2rem 2rem 1rem;
+}
+
+.showcase {
+	margin: 6rem 0;
+}
+
+.showcase .showcase-content {
+	display: flex;
+	/* position: relative; */
+}
+
+.showcase .showcase-info {
+	/* position: absolute; */
+	transform: translate(-130px, 225px);
+	/* margin-left: -130px;
+	margin-top: 200px; */
+	background: #fff;
+	/* bottom: 0;
+	right: 250px; */
+	width: 500px;
+	padding-left: 5rem;
+	padding-top: 5rem;
+	height: fit-content;
+	/* border: solid red; */
+}
+
+.showcase .showcase-info h1 {
+	font-size: 3rem;
+	font-weight: 100;
+	margin-bottom: 1rem;
+}
+
+.creator-desktop-view {
+	padding-bottom: 4rem;
+}
+
+.creator-desktop-view .creator-top {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.creator-desktop-view .creator-top h1,
+.creator-mobile-view .creator-top h1 {
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+.creator-desktop-view .creator-btn,
+.creator-mobile-view .creator-btn {
+	text-transform: uppercase;
+	background: #fff;
+	border: 1px solid hsl(0, 0%, 55%);
+	padding: 0.5rem 2rem;
+}
+
+.creator-desktop-view .creator-btn:hover{
+	background: #000;
+	color: #fff;
+}
+
+.creator-desktop-view .creator-image {
+	position: relative;
+	height: fit-content;
+}
+
+.creator-desktop-view .creator-image-gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+}
+
+.creator-desktop-view .creator-image-gallery img {
+	width: 100%;
+	height: 100%;
+}
+
+.creator-desktop-view .creator-image-info {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.creator-desktop-view .creator-image-earth::before {
+	content: "DEEP EARTH";
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 999;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.creator-desktop-view .creator-image .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 99%;
+	background: #000;
+	opacity: 0.6;
+}
+
+.creator-desktop-view .creator-image:hover .overlay{
+	background: hsl(0, 0%, 55%);
+}
+.creator-desktop-view .creator-image-night::before {
+	content: "NIGHT ARCADE";
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 999;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.creator-desktop-view .creator-image-soccer::before {
+	content: "SOCCER TEAM VR";
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 999;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.creator-desktop-view .creator-image-grid::before {
+	content: "THE GRID";
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 999;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.creator-desktop-view .creator-image-above::before {
+	content: "FROM UP ABOVE VR";
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 999;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.creator-desktop-view .creator-image-grid::before {
+	content: "THE GRID";
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 999;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.creator-desktop-view .creator-image-pocket::before {
+	content: "POCKET BOREALIS";
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 999;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.creator-desktop-view .creator-image-pocket::before {
+	content: "POCKET BOREALIS";
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 999;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.creator-desktop-view .creator-image-curiosity::before {
+	content: "POCKET BOREALIS";
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 999;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.creator-desktop-view .creator-image-curiosity::before {
+	content: "POCKET BOREALIS";
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 999;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.creator-desktop-view .creator-image-fisheye::before {
+	content: "MAKE IT FISHEYE";
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	z-index: 999;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.creator-mobile-view {
+	display: none;
+}
+
+.creator-mobile-view img {
+	width: 100%;
+}
+
+footer {
+	background: #000;
+	padding: 2rem 0;
+	/* padding: 5rem 0; */
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer p {
+	color: hsl(0, 0%, 41%);
+	font-size: large;
+}
+
+footer .footer-links,
+footer .social-icons {
+	display: flex;
+	align-items: center;
+}
+
+footer .footer-links,
+footer p {
+	margin-top: 1rem;
+}
+
+footer .footer-links li,
+footer .social-icons li {
+	margin-right: 1rem;
+}
+
+footer .footer-links a {
+	color: #fff;
+	font-size: large;
+}
+
+@media only screen and (max-width: 540px) {
+	header {
+		background: url("images/image-hero-mobile.jpg") no-repeat center
+			center/cover;
+	}
+
+	header .navbar.close:before {
+		content: "";
+		position: fixed;
+		background: #000;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	header .nav-links {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		padding-top: 30vh;
+		align-items: start;
+		padding-left: 1rem;
+		font-size: 2rem;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		transform: translateY(-100%);
+		transition: translateY 0.5s ease-in-out;
+		z-index: 999;
+	}
+
+	header .nav-links.close {
+		transform: translateY(0);
+		transition: translateY 0.5s ease-in-out;
+	}
+
+	header .nav-links li {
+		margin-bottom: 1rem;
+	}
+
+	header .menu {
+		display: block;
+	}
+
+	header .header-info {
+		width: 100%;
+		color: #fff;
+		border: 1px solid #fff;
+		height: fit-content;
+		text-transform: uppercase;
+		font-size: 2.5rem;
+		margin-top: 10rem;
+	}
+
+	.showcase .showcase-content {
+		all: unset;
+	}
+
+	.showcase .showcase-info {
+		all: unset;
+	}
+
+	.showcase .showcase-image {
+		width: 100%;
+	}
+
+	.showcase .showcase-info h1,
+	.showcase .showcase-info p {
+		width: 90%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.showcase .showcase-info h1 {
+		font-size: 2rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+
+	.showcase .showcase-info p {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	.creator-desktop-view {
+		display: none;
+	}
+
+	.creator-mobile-view {
+		display: block;
+		padding-bottom: 5rem;
+	}
+
+	.creator-mobile-view .creator-top h1 {
+		font-size: 2rem;
+		padding-bottom: 3rem;
+		text-align: center;
+	}
+
+	.creator-mobile-view .creator-image {
+		margin-bottom: 1rem;
+		position: relative;
+	}
+
+	.creator-mobile-view .creator-image-earth::before {
+		content: "DEEP EARTH";
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 999;
+		color: #fff;
+		font-size: 1.4rem;
+	}
+	.creator-mobile-view .creator-image-night::before {
+		content: "NIGHT ARCADE";
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 999;
+		color: #fff;
+		font-size: 1.4rem;
+	}
+
+	.creator-mobile-view .creator-image-soccer::before {
+		content: "SOCCER TEAM VR";
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 999;
+		color: #fff;
+		font-size: 1.4rem;
+	}
+
+	.creator-mobile-view .creator-image-grid::before {
+		content: "THE GRID";
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 999;
+		color: #fff;
+		font-size: 1.4rem;
+	}
+
+	.creator-mobile-view .creator-image-above::before {
+		content: "FROM UP ABOVE VR";
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 999;
+		color: #fff;
+		font-size: 1.4rem;
+	}
+
+	.creator-mobile-view .creator-image-grid::before {
+		content: "THE GRID";
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 999;
+		color: #fff;
+		font-size: 1.4rem;
+	}
+
+	.creator-mobile-view .creator-image-pocket::before {
+		content: "POCKET BOREALIS";
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 999;
+		color: #fff;
+		font-size: 1.4rem;
+	}
+
+	.creator-mobile-view .creator-image-pocket::before {
+		content: "POCKET BOREALIS";
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 999;
+		color: #fff;
+		font-size: 1.4rem;
+	}
+
+	.creator-mobile-view .creator-image-curiosity::before {
+		content: "POCKET BOREALIS";
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 999;
+		color: #fff;
+		font-size: 1.4rem;
+	}
+
+	.creator-mobile-view .creator-image-curiosity::before {
+		content: "POCKET BOREALIS";
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 999;
+		color: #fff;
+		font-size: 1.4rem;
+	}
+
+	.creator-mobile-view .creator-image-fisheye::before {
+		content: "MAKE IT FISHEYE";
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 999;
+		color: #fff;
+		font-size: 1.4rem;
+	}
+
+	.creator-mobile-view .creator-btn {
+		margin: auto;
+		display: flex;
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	.footer-content {
+		all: unset;
+	}
+
+	footer .footer-links {
+		all: unset;
+	}
+
+	footer .social-icons {
+		justify-content: center;
+	}
+
+	footer .footer-logo {
+		margin-bottom: 2rem;
+	}
+
+	footer .footer-links li {
+		margin-bottom: 1rem;
+	}
+
+	footer .social-icons li {
+		margin-right: 1.5rem;
+	}
+}
